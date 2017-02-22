@@ -1,6 +1,7 @@
 /* Styles for larger screens */
 
 
+
 @media screen and (min-width: 720px)	{
   
   
@@ -81,30 +82,6 @@
 	.nav	{
 		padding: 0 10px 0 0;
 		}
-
-	.tag	{
-		background-color: #efefef;
-  
-		color: black;
-  
-		padding: 10px;
-  
-		border-radius: 5px;
-  
-		display: table;
-  
-		margin: 10px auto;
-		font-size: 1.5em;
-		}
-
-	.location	{
-  
-		background-color: #786739;
-  
-		color: #afafaf;
-
-		font-size: 1.2em;	
-		}
 	}
 
 /* smartphone */
@@ -114,38 +91,9 @@
 	.main-nav	{
 		position: static;
 		}
-	header .profile-image	{
-  
-		margin-top: -50px;
 
-		}
-
-	.tag	{
-		background-color: #efefef;
-  
-		color: black;
-  
-		padding: -50%;
-  
-		border-radius: 5px;
-  
-		display: table;
-  
-		margin: 10px auto;
-		font-size: 100%;
-		}
-
-	.location	{
-  
-		background-color: #786739;
-  
-		color: #afafaf;
-
-		font-size: 100%;
-		margin-bottom: 10%;
-		}
-	.profile-image	{
-		display: none;
+	li.name	{
+		margin: 0 0 0 2%;
 		}
 	}
 
@@ -154,11 +102,19 @@
 		display: flex;
 		float: right;
 		}
+
+	li.name	{
+		margin: 0 0 0 2%;
+		}
 	}
 
 @media screen and (max-width: 360px)	{
 	.h2-font-size	{
 		font-size: 100%;
+		}
+
+	.dice	{
+		
 		}
 	}
 
