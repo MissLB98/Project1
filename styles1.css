@@ -68,11 +68,12 @@ a:hover	{
 	background: #600;
 	display: block;
 	padding: 10px;
+	border: 1px solid #ffaa00;
 	transition: all .3;
 	}
 
 .pages li a:hover	{
-	transform: scale(1.1) rotate(0deg);
+	transform: scale(1.1) rotate(3deg);
 	}
 
 li.selected a	{
@@ -214,7 +215,7 @@ header .profile-image:hover	{
 	}
 
 .location	{
-	background: brown;
+	background: #999;
 	color: 9a6f33;
 	} 
 
@@ -233,7 +234,7 @@ MAIN
   
 	max-width: 500px;
   
-	text-align: justify;
+	text-align: left;
   
 	background: #fff;
   

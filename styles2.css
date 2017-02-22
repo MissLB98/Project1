@@ -34,6 +34,8 @@ h2	{
 
 li.name	{
 	font-family: 'Bungee Hairline', sans-serif;
+	text-decoration: overline;
+	border: 1.5px solid orange;
 	}
 
 .name	{
@@ -66,11 +68,12 @@ a:hover	{
 	background: #600;
 	display: block;
 	padding: 10px;
+	border: 1px solid #ffaa00;
 	transition: all .3;
 	}
 
 .pages li a:hover	{
-	transform: scale(1.1) rotate(0deg);
+	transform: scale(1.1) rotate(3deg);
 	}
 
 li.selected a	{
@@ -198,7 +201,7 @@ MAIN
 	width: 100%; 
 	max-width: 954px;
   
-	text-align: justify;
+	text-align: left;
   
 	background: #fff;
   
