@@ -34,6 +34,8 @@ h2	{
 
 li.name	{
 	font-family: 'Bungee Hairline', sans-serif;
+	text-decoration: overline;
+	border: 1.5px solid orange;
 	}
 
 .name	{
@@ -173,15 +175,15 @@ header	{
 
 header .profile-image	{
   
-	margin-top: 100px;
+	margin-top: 55px;
   
 	width: 200px;
   
 	height: 200px;
   
-	border-radius: 30%;
+	border-radius: -100%;
   
-	border: 1.5px solid black;
+	border: 1.5px solid #66ac99;
   
 	transition: all .7s;
 
@@ -190,7 +192,7 @@ header .profile-image	{
 
 header .profile-image:hover	{
   
-	transform: scale(1.2) rotate(320deg);
+	transform: scale(1.3) rotate(320deg);
 
 	}
 
@@ -209,16 +211,13 @@ header .profile-image:hover	{
   
 	margin: 10px auto;
 
-	} 
-
+	}
 
 .location	{
-  
-	background-color: #ab9a6c;
-  
-	color: #252211;
+	background: brown;
+	color: 9a6f33;
+	} 
 
-	}
 
 /***************************************
 MAIN
