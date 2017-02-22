@@ -27,6 +27,18 @@ body	{
 	font-size: 1.3em;
 	}
 
+.fav	{
+	color: #0f0;
+	}
+
+.weather	{
+	color: #0ff;
+	}
+
+.sun-kissed	{
+	color: #f50;
+	}
+
 h2	{
 	font-family: 'Rock Salt', sans-serif;
 	text-align: center;
@@ -68,8 +80,11 @@ a:hover	{
 	background: #600;
 	display: block;
 	padding: 10px;
-	border: 1px solid #ffaa00;
-	transition: all .3;
+	transition: all .3s;
+	}
+
+.pages li a	{
+	border: 1px solid #fa0;
 	}
 
 .pages li a:hover	{
@@ -141,7 +156,7 @@ li.selected a	{
 	}
 
 
-.nav a	{
+.nav li a	{
   
 	transition: all .3s;
 

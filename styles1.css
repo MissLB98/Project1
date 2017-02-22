@@ -69,7 +69,7 @@ a:hover	{
 	display: block;
 	padding: 10px;
 	border: 1px solid #ffaa00;
-	transition: all .3;
+	transition: all .3s;
 	}
 
 .pages li a:hover	{
@@ -182,7 +182,7 @@ header .profile-image	{
   
 	height: 200px;
   
-	border-radius: -100%;
+	border-radius: 0%;
   
 	border: 1.5px solid #66ac99;
   
@@ -215,8 +215,9 @@ header .profile-image:hover	{
 	}
 
 .location	{
-	background: #999;
-	color: 9a6f33;
+	background: #dfdfdf;
+	color: #fff;
+  	text-shadow: 10px 0 10px #000;
 	} 
 
 
