@@ -8,6 +8,9 @@ Global Layout Set-up
 	box-sizing: border-box;	
 	}
   
+
+
+
 
 
 body	{
@@ -15,7 +18,8 @@ body	{
 	margin: 0;
   
 	padding: 0;
-  
+
+	max-width: 100%;
 	text-align: center;
   
 	font-family: 'Fondamento', sans-serif;
@@ -48,6 +52,8 @@ li.name	{
 	font-family: 'Bungee Hairline', sans-serif;
 	text-decoration: overline;
 	border: 1.5px solid orange;
+	width: 180px;
+	display: inline-block;
 	}
 
 .name	{
@@ -76,18 +82,16 @@ a:hover	{
 
 
 
-.pages li a	{
+ul.pages li a	{
+	margin: 10px;
 	background: #600;
-	display: block;
 	padding: 10px;
 	transition: all .3s;
-	}
-
-.pages li a	{
 	border: 1px solid #fa0;
+	display: block;
 	}
 
-.pages li a:hover	{
+ul.pages li a:hover	{
 	transform: scale(1.1) rotate(3deg);
 	}
 
@@ -117,7 +121,6 @@ li.selected a	{
 	position: fixed;
   
 	text-align: center;
-
 	}
 
 
@@ -200,22 +203,21 @@ header	{
   
 	display: table;
   
-	margin: 5% auto;
+	margin: 5% auto 0 auto;
 
 	} 
 
 /***************************************
 MAIN
 ****************************************/
-.card	{
+
+.card	{
   
 	margin: 30px;
  
 	padding: 20px 40px 40px;
  
-	width: 100%; 
-	max-width: 954px;
-  
+	max-width: 2000px;
 	text-align: left;
   
 	background: #fff;
@@ -223,15 +225,14 @@ MAIN
 	border-bottom: 4px solid #ababab;
   
 	border-top: 4px solid #ababab;
-	border-radius: 10px;
+	border-radius: 6px;
   
 	transition: all .5s;
-
 	}
 
 .card:hover	{
   
-	border-color: #600;
+	border-color: #990000;
 
 	}
 
@@ -271,8 +272,8 @@ ul.skills	{
 	}
 
 img	{
-	height: 350px;
-	width: 300px;
+	height: 550px;
+	width: 500px;
 	display: block;
 	margin: 0 auto;
 	}
