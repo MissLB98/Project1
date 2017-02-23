@@ -15,7 +15,8 @@ body	{
 	margin: 0;
   
 	padding: 0;
-  
+ 
+	max-width: 100%;
 	text-align: center;
   
 	font-family: 'Fondamento', sans-serif;
@@ -36,6 +37,7 @@ li.name	{
 	font-family: 'Bungee Hairline', sans-serif;
 	text-decoration: overline;
 	border: 1.5px solid orange;
+	width: 180px;
 	}
 
 .name	{
@@ -60,20 +62,6 @@ a:hover	{
   
 	color: #900;
 
-	}
-
-
-
-.pages li a	{
-	background: #600;
-	display: block;
-	padding: 10px;
-	border: 1px solid #ffaa00;
-	transition: all .3s;
-	}
-
-.pages li a:hover	{
-	transform: scale(1.1) rotate(3deg);
 	}
 
 li.selected a	{
@@ -141,7 +129,7 @@ li.selected a	{
 	}
 
 
-.nav a	{
+.nav li a	{
   
 	transition: all .3s;
 
@@ -193,7 +181,7 @@ header .profile-image	{
 
 header .profile-image:hover	{
   
-	transform: scale(1.3) rotate(320deg);
+	transform: scale(1.3) rotatex(360deg) rotatey(180deg);
 
 	}
 
@@ -294,6 +282,7 @@ ul.skills	{
 /******************************************
 FOOTER STYLING
 *******************************************/
+
 
 
 footer	{
