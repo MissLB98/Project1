@@ -1,0 +1,742 @@
+/**********************************************
+Global Layout Set-up 
+***********************************************/
+ 
+
+*	{ 
+  
+	box-sizing: border-box;	
+	}
+  
+
+
+body	{
+
+	margin: 0;
+
+	padding: 0;
+
+	max-width: 100%;
+	text-align: center;
+
+	font-family: 'Fondamento', sans-serif;
+  
+	color: #252211;
+  
+	background: #272727;
+
+	font-size: 1.3em;
+	}
+
+.fav	{
+	color: #0f0;
+	}
+
+.weather	{
+	color: #0ff;
+	}
+
+.sun-kissed	{
+	color: #f50;
+	}
+
+h1	{
+	color: #eee;
+	border: 1.5px solid #fff;
+	}
+
+h2	{
+	font-family: 'Rock Salt', sans-serif;
+	text-align: center;
+	}
+
+li.name	{
+	font-family: 'Bungee Hairline', sans-serif;
+	text-decoration: overline;
+	border: 1.5px solid orange;
+	width: 180px;
+	display: inline-block;
+	}
+
+.name	{
+	font-family: 'Give You Glory', sans-serif;
+	}
+
+.flex	{
+	margin: 1px;
+	}
+
+.container1	{
+	height: 100%;
+	margin: 10% auto;
+	padding: 10%;
+	}
+
+.dice	{
+	position: relative;
+	margin: 0 auto;
+	height: 200px;
+	width: 200px;
+	transform-style: preserve-3d;
+	animation: spin 1s infinite alternate;
+	}
+
+@keyframes spin	{
+	0% {
+	Transform: rotateX(180deg) rotatey(-360deg) translateZ(0px);
+	}
+		}
+
+.dice:hover > .side	{
+	border-radius: 200%;
+	}
+	
+.side	{
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	opacity: 1;
+	transition: .3s;
+	}
+
+.one	{
+	transform: rotateX(90deg) translateZ(100px);
+	background: #94b6e3;
+	}
+	
+.two	{
+	transform: translateZ(100px);
+	background: #3c1428;
+	}
+	
+.three	{
+	transform: rotateY(90deg) translateZ(100px);
+	background: #b6c399;
+	}
+
+.four	{
+	transform: rotateY(180deg) translateZ(100px);
+	background: #4c9;
+	}
+	
+.five	{
+	transform: rotateY(-90deg) translateZ(100px);
+	background: #a20319;
+	}
+
+.six	{
+	transform: rotateX(-90deg) translateZ(100px);
+	background: #f9ae86;
+	}
+
+img	{
+	width: 100%;
+	border-radius: 100%;
+	}
+
+/* Link Styles */
+
+
+
+a	{
+
+	text-decoration: none;
+  
+	color: #999;
+
+	}
+
+
+a:hover	{
+  
+	color: #900;
+
+	}
+
+li.pages a	{
+	margin: 10px 0px;
+	padding: 10px;
+	transition: all .3s;
+	display: run-in;
+	}
+
+.selected a	{
+	color: white;
+	}
+
+
+/*********************************
+ Section Styles 
+**********************************/
+
+
+
+
+/* navigation */
+.main-nav	{
+  
+	width: 100%;
+  
+	background: black;
+  
+	min-height: 30px;
+  
+	padding: 10px;
+  
+	position: fixed;
+  
+	text-align: center;
+
+	}
+
+
+.nav	{
+  
+	display: flex;
+  
+	justify-content: space-around;
+  
+	font-weight: 700;
+  
+	list-style-type: none;
+  
+	margin: 0 auto;
+	padding: 0;
+
+	}
+
+
+
+.nav .name	{
+    
+	display: block;
+    
+	margin-right: auto;
+    
+	color: white;
+
+	}
+
+
+.nav li	{
+  
+	padding: 10px 10px 10px 10px;
+
+	}
+
+
+.nav li a	{
+  
+	transition: all .3s;
+
+	}
+
+
+.nav a:hover	{
+  
+	color: white;
+
+	}
+
+/********************************
+HEADER STYLING
+*********************************/
+
+
+
+header	{
+  
+	text-align: center;
+  
+	background-color: #333;
+	background: url('images/cape-town.jpg') no-repeat top center;
+  
+	background-size: cover;
+  
+	overflow: hidden;
+  
+	padding-top: 60px;
+	line-height: 1.5;
+	}
+
+header .profile-image	{
+  
+	margin-top: 55px;
+  
+	width: 200px;
+  
+	height: 200px;
+  
+	border-radius: 0%;
+  
+	border: 1.5px solid #66ac99;
+  
+	transition: all .7s;
+
+	}
+
+
+header .profile-image:hover	{
+  
+	transform: scale(1.3) rotatex(360deg) rotatey(180deg);
+
+	}
+
+
+.title	{
+	background-color: #efefef;
+  
+	color: black;
+  
+	padding: 10px;
+  
+	border-radius: 5px;
+  
+	display: table;
+  
+	margin: 10px auto;
+	}
+
+.tag	{
+  
+	font-family: 'Give You Glory', sans-serif;
+	background-color: #efefef;
+  
+	color: #999;
+  
+	padding: 10px;
+  
+	border-radius: 5px;
+  
+	display: table;
+  
+	margin: 3% auto 0 auto;
+
+	}
+
+.location	{
+	background: #dfdfdf;
+	color: #fff;
+  	text-shadow: 10px 0 10px #000;
+	margin-bottom: 10px;
+	} 
+
+
+/***************************************
+MAIN
+****************************************/
+
+
+
+.card	{
+  
+	margin: 20px;
+  
+	padding: 20px 40px 40px;
+  
+	max-width: 2000px;
+  
+	text-align: left;
+  
+	background: #fff;
+  
+	border-bottom: 4px solid #ababab;
+  
+	border-top: 4px solid #ababab;
+	border-radius: 6px;
+  
+	transition: all .5s;
+
+	}
+
+
+.card:hover	{
+  
+	border-color: #600;
+
+	}
+
+
+
+ul.skills	{
+  
+	padding: 0;
+  
+	text-align: center;
+
+	}
+
+
+
+.skills li	{
+  
+	border-radius: 6px;
+  
+	display: inline-block;
+  
+	background: #ff9904;
+  
+	color: white;
+  
+	padding: 5px 10px;
+  
+	margin: 2px;
+
+	}
+
+
+
+.skills li:nth-child(odd)	{
+  
+	background: #828050;
+	}
+
+img	{
+	height: 550px;
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+	}
+
+
+/******************************************
+FOOTER STYLING
+*******************************************/
+
+footer	{
+  
+	width: 100%;
+  
+	min-height: 30px;
+  
+	padding: 40px 0 30px 0px;
+
+	background: #fff;
+	}
+
+
+
+footer .copyright	{
+  
+	top: -8px;
+  
+	font-size: .75em;
+
+	}
+
+
+
+footer ul	{
+  
+	list-style-type: none;
+  
+	margin: 0;
+  
+	padding: 0;
+
+	}
+
+
+
+footer ul li	{
+  
+	display: inline-block;
+
+	}
+
+
+
+/*-- social icon --*/
+
+a.social	{
+  
+	display: inline-block;
+  
+	text-indent: -9999px;
+  
+	margin-left: 5px;
+  
+	width: 30px;
+  
+	height: 30px;
+  
+	background-size: 30px 30px;
+  
+	opacity: .4;
+  
+	transition: all .5s;
+
+	}
+
+a.github	{
+  
+	background-image: url(images/github.svg);
+
+	}
+
+
+a.social:hover	{
+  
+	opacity: 1;
+
+	}
+
+
+.clearfix	{
+  
+	clear: both;
+
+	}
+
+/**********************************
+MEDIA QUERIES
+***********************************/
+
+/* Styles for larger screens */
+
+
+@media screen and (min-width: 720px)	{
+  
+  
+	
+	.flex	{
+      
+		display: -ms-flexbox;
+
+
+/* TWEENER - IE 10 */
+      
+
+		display: flex; 
+      
+		max-width: 1200px;
+      
+		-ms-flex-pack: distribute;
+      
+		justify-content: space-around;
+      
+		margin: 0 auto;
+
+		padding-top: 60px;   
+		}
+
+ 
+
+	header	{
+    
+		min-height: 100px;
+  
+		}
+
+  
+
+	.nav	{
+    
+		max-width: 1200px;
+    
+		padding: 0 30px;
+  
+		}
+
+
+  
+
+	ul.pages	{
+		list-style: none;
+		}
+
+	main	{
+    
+		padding-top: 20px;
+  
+		}
+
+  
+
+	main p	{
+    
+		line-height: 1.6em;
+  
+		}
+
+  
+
+	footer	{
+    
+		font-size: 1.3em;
+  
+		max-width: 1200px; 
+		margin: 40px auto;
+  
+		}
+
+
+	}
+
+
+
+	.card	{
+		margin: 0 30px;
+		display: run-in;
+		}
+	}
+
+
+
+	img	{
+		max-width: 500px;
+		max-height: 550px;
+		}
+
+
+/* Style for Mobile Tablet */
+
+@media screen and (max-width: 699px)	{
+
+	.nav	{
+		padding: 0 10px 0 0;
+		}
+
+	.tag	{
+		background-color: #efefef;
+  
+		color: black;
+  
+		padding: 10px;
+  
+		border-radius: 5px;
+  
+		display: table;
+  
+		margin: 10px auto;
+		font-size: 1.5em;
+		}
+
+	.location	{
+  
+		background-color: #dfdfdf;
+  
+		color: #fff;
+
+		font-size: 1.2em;	
+		}
+
+	.card	{
+	margin: 30px auto 30px auto;
+	max-width: 500px;
+}
+	}
+
+/* mobile phone */
+
+@media screen and (max-width: 487px)	{		
+
+	.main-nav	{
+		position: static;
+		}
+	header .profile-image	{
+  
+		margin-top: -50px;
+
+		}
+
+	.tag	{
+		background-color: #efefef;
+  
+		color: black;
+  
+		padding: 0%;
+  
+		border-radius: 5px;
+  
+		display: table;
+  
+		margin: 10px auto;
+		font-size: 100%;
+		}
+
+	.location	{
+  
+		background-color: #cfcfcf;
+  
+		color: #fff;
+
+		font-size: 100%;
+		margin-bottom: 10%;
+		}
+	.profile-image	{
+		display: none;
+		}
+
+	}
+
+	img	{
+		max-width: 400px;
+		max-height: 450px;
+		}
+
+	li.name	{
+		margin: 0 0 0 2%;
+		}
+	}
+
+@media screen and (min-width: 460px)	{
+	li.pages	{
+		display: flex;
+		float: right;
+		}
+
+	li.name	{
+		margin: 0 0 0 2%;
+		}
+	}
+
+@media screen and (max-width: 456px)	{
+		
+	img	{
+		max-width: 210px;
+		max-height: 260px;
+		}
+	}
+
+@media screen and (max-width: 399px)	{
+	li.pages	{
+		display: block;
+		}
+
+	a:nth-child(odd)	{
+		float: left;
+		}
+
+	li.name	{
+		padding: 3px;
+		}
+	}
+
+@media screen and (max-width: 360px)	{
+	.h2-font-size	{
+		font-size: 100%;
+		}
+	}
+
+@media screen and (max-width: 320px)	{
+	li.name	{
+		font-size: 100%;
+		margin: 2px;
+		padding: 2px;
+		}	
+
+	.pages a	{
+		padding: 3px;
+		}
+	}
+
+@media screen and (min-width: 220px)	{
+	li.pages	{
+		list-style: none;
+		}
+
+	li.name	{
+		background: #550000;
+		}
+	}
