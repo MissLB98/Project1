@@ -570,11 +570,6 @@ MEDIA QUERIES
   
 		}
 
-
-	}
-
-
-
 	.card	{
 		margin: 0 30px;
 		display: run-in;
@@ -664,11 +659,10 @@ MEDIA QUERIES
 		font-size: 100%;
 		margin-bottom: 10%;
 		}
+
 	.profile-image	{
 		display: none;
 		}
-
-	}
 
 	img	{
 		max-width: 400px;
@@ -681,6 +675,7 @@ MEDIA QUERIES
 	}
 
 @media screen and (min-width: 460px)	{
+	
 	li.pages	{
 		display: flex;
 		float: right;
